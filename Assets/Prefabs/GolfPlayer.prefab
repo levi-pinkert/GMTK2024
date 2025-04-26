@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &438672749178907006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 438672749178907004}
+  - component: {fileID: 438672749178907005}
+  - component: {fileID: 6939761059418252002}
+  m_Layer: 0
+  m_Name: GolfPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &438672749178907004
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438672749178907006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0832195, y: 1.6223507, z: 4.0734367}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &438672749178907005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438672749178907006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ba2b82956e7fac4295e3935d50bfc6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  golfBall: {fileID: 0}
+  golfCamera: {fileID: 0}
+  aimPredictor: {fileID: 0}
+  golfClub: {fileID: 0}
+  initialPowerLevel: 0.2
+  minPowerLevel: 0.18
+  powerLevelSensitivity: 0.02
+  swingHoldTimeThreshold: 0.1
+  powerLevelCumulativeDeltaThreshold: 0.02
+  minAimPitch: 30
+  maxAimPitch: 65
+  maxBallSpeed: 30
+  scaleBase: 2
+  scaleAnimDuration: 0.15
+  scaleAnim:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1.4789879
+      outSlope: 1.4789879
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.046009388
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  minScaleLevel: -6
+  maxScaleLevel: 6
+  minMoveStateDuration: 1
+  ballStoppingSpeed: 0.1
+  ballStoppingTime: 0.5
+  respawnDuration: 1
+  lightHitSounds:
+  - {fileID: 8300000, guid: aec165c3d88d4c44eb197e56c868adc9, type: 3}
+  - {fileID: 8300000, guid: 10e85144072a0534894926bc147e3196, type: 3}
+  - {fileID: 8300000, guid: 29cae8f9a64d84645843cf0e1910bd58, type: 3}
+  - {fileID: 8300000, guid: e48e51ad410e2ac48959e6ca7da27643, type: 3}
+  - {fileID: 8300000, guid: 2fc957fbf2ea4714e847000c9466a546, type: 3}
+  mediumHitPowerCutoff: 0.33
+  mediumHitSounds:
+  - {fileID: 8300000, guid: ee32cbfd8f80fb34db5e27b3e53cd747, type: 3}
+  - {fileID: 8300000, guid: 1b82ff24358658c45a17d0ba845a7e11, type: 3}
+  - {fileID: 8300000, guid: ec56251a1f958fb4d98b1950dd6ba7e2, type: 3}
+  - {fileID: 8300000, guid: 816e75c2ec9fd1a4a800b8341a7d2f3a, type: 3}
+  - {fileID: 8300000, guid: f3a55819456bea745a633bc54744b58f, type: 3}
+  heavyHitPowerCutoff: 0.66
+  heavyHitSounds:
+  - {fileID: 8300000, guid: 1c23659f2f1bf9b48a2f94a90db78098, type: 3}
+  - {fileID: 8300000, guid: cc010d0d2b50fe041bc1ae07a0812e47, type: 3}
+  - {fileID: 8300000, guid: 8f14a8f025fc44846b5908433bebac7f, type: 3}
+  - {fileID: 8300000, guid: fb5c7bd27b8cb3f4eb5860c04b4bb1f7, type: 3}
+  - {fileID: 8300000, guid: 3e8e13382d3e8404c844a736844b3241, type: 3}
+  swingSwooshSound: {fileID: 8300000, guid: 2c43e20f61ecbdc489ea0f82de92c859, type: 3}
+  scaleUpSound: {fileID: 8300000, guid: aa59bfca11057eb498a7d9e29503a4cd, type: 3}
+  scaleDownSound: {fileID: 8300000, guid: aa59bfca11057eb498a7d9e29503a4cd, type: 3}
+  failedInput: {fileID: 8300000, guid: 0c1e9dfb19df0014880b2689abcbd6a6, type: 3}
+--- !u!114 &6939761059418252002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438672749178907006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c3100cced5b7884b992ea916026d5e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseScrollThreshold: 0.1
+  scaleBufferTime: 0.5
