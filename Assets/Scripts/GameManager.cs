@@ -173,6 +173,9 @@ public class GameManager : MonoBehaviour
 
 	public void OnWorldResize(Vector3 newWorldOrigin, float newWorldScale)
 	{
+		// All of our shaders use world position to make procedural textures.
+		// As a result, when the world scales up/down, the textures' scale appears to change.
+		// To cancel this out, we have a few uniforms that will let the shader take world scale into account.
 		worldOrigin = newWorldOrigin;
 		worldScale = newWorldScale;
 		SetShaderGlobals();

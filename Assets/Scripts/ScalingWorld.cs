@@ -16,6 +16,11 @@ public class ScalingWorld : MonoBehaviour
 		GameManager.instance.OnWorldResize(transform.position, currentScale);
 	}
 
+	// Everything in the level is a child of this object.
+	// So, it's actually really simple to scale the level: just set the scale of this object.
+	// However, we want it to appear as if the ball's position is staying constant relative to the
+	// world. So, we have to translate the world away from the ball as it scales up, and translate the
+	// world towards the ball as it scales down.
 	public void ChangeScale(Vector3 focusPoint, float newScale)
     {
         float scaleRatio = newScale / currentScale;
