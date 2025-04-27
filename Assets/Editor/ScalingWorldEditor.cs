@@ -10,19 +10,23 @@ public class ScalingWorldEditor : Editor
 	{
 		base.OnInspectorGUI();
 
-		if(GUILayout.Button("Apply materials to all"))
+		if(GUILayout.Button("Apply materials to children"))
 		{
 			ApplyMaterialsToTaggedObjects();
 		}
 	}
 
+	// Automatically assign material to objects based on their tag.
+	// This is a nice time-saver during level design, because this game only has a couple
+	// different types of materials. Plus, we really want to avoid errors where the physic
+	// material doesn't match the actual rendered material.
 	private void ApplyMaterialsToTaggedObjects()
 	{
 		ScalingWorld scalingWorld = (ScalingWorld)target;
 		GameManager gameManager = FindObjectOfType<GameManager>();
 		Assert.IsNotNull(gameManager);
 
-		Dictionary<string, WorldMaterialType> materialTypes = new();
+		Dictionary<string, WorldMaterialType> materialTypes = new Dictionary<string, WorldMaterialType>();
 		foreach (WorldMaterialType matType in gameManager.worldMaterialTypes)
 		{
 			materialTypes.Add(matType.tagName, matType);

@@ -6,26 +6,26 @@ using UnityEngine;
 [InitializeOnLoad]
 public class EditorStartup : MonoBehaviour
 {
-    static EditorStartup()
-    {
-        GameManager gameManager = FindObjectOfType<GameManager>();
-        if (gameManager != null)
-        {
-            gameManager.OnEditorStartup();
-        }
+	static EditorStartup()
+	{
+		GameManager gameManager = FindObjectOfType<GameManager>();
+		if (gameManager != null)
+		{
+			gameManager.OnEditorStartup();
+		}
 
-        EditorApplication.playModeStateChanged += OnPlayModeStateChanged;
+		EditorApplication.playModeStateChanged += OnPlayModeStateChanged;
 	}
 
-    public static void OnPlayModeStateChanged(PlayModeStateChange state)
-    {
-        if (state == PlayModeStateChange.EnteredEditMode)
-        {
-            GameManager gameManager = FindObjectOfType<GameManager>();
-            if (gameManager != null)
-            {
-                gameManager.OnEditorStartup();
-            }
-        }
+	public static void OnPlayModeStateChanged(PlayModeStateChange state)
+	{
+		if (state == PlayModeStateChange.EnteredEditMode)
+		{
+			GameManager gameManager = FindObjectOfType<GameManager>();
+			if (gameManager != null)
+			{
+				gameManager.OnEditorStartup();
+			}
+		}
 	}
 }

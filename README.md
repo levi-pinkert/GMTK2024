@@ -6,6 +6,7 @@ If you're looking for code samples, here are some scripts with interesting stuff
 - [GolfPlayer.cs](/Assets/Scripts/GolfPlayer.cs)
 - [GolfCamera.cs](/Assets/Scripts/GolfCamera.cs)
 - [GameManager.cs](/Assets/Scripts/GameManager.cs)
+- [ScalingWorldEditor.cs](/Assets/Editor/ScalingWorldEditor.cs)
 - [ScalingWorld.cs](/Assets/Scripts/ScalingWorld.cs)
 - [GolfClub.cs](/Assets/Scripts/GolfClub.cs)
 - [Scorecard.cs](/Assets/Scripts/UI/Scorecard.cs)
