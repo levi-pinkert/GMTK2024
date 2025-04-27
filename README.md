@@ -1,13 +1,11 @@
-A golf game created in 4 days for GMTK Game Jam 2024, with the theme "Built to Scale".
+A golf game with a strange twist, created in 4 days for GMTK Game Jam 2024 with the theme "Built to Scale". You can play the game on [itch.io](https://fajpaj.itch.io/big-mini-golf).
 
-You can play the game on [itch.io](https://fajpaj.itch.io/big-mini-golf).
-
-Designed & Programmed by Levi Pinkert.
+Created by Levi Pinkert (deign, programming, art, etc.)
 
 If you're looking for code samples, here are some scripts with interesting stuff:
-- Scripts/GolfPlayer.cs
-- Scripts/GolfCamera.cs
-- Scripts/GameManager.cs
-- Scripts/ScalingWorld.cs
-- Scripts/GolfClub.cs
-- Scripts/UI/Scorecard.cs
+- [GolfPlayer.cs](/Assets/Scripts/GolfPlayer.cs)
+- [GolfCamera.cs](/Assets/Scripts/GolfCamera.cs)
+- [GameManager.cs](/Assets/Scripts/GameManager.cs)
+- [ScalingWorld.cs](/Assets/Scripts/ScalingWorld.cs)
+- [GolfClub.cs](/Assets/Scripts/GolfClub.cs)
+- [Scorecard.cs](/Assets/Scripts/UI/Scorecard.cs)
