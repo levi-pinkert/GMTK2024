@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MaintainWorldPosition : MonoBehaviour
 {
-    public static HashSet<MaintainWorldPosition> all = new();
+	public static HashSet<MaintainWorldPosition> all = new();
 
 	public Vector3 multiplier = Vector3.one;
 

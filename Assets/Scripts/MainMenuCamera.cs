@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MainMenuCamera : MonoBehaviour
 {
-    public float rotationRate;
+	public float rotationRate;
 	public Vector3 offsetToScaleFocus;
 	public AnimationCurve scaleAnimation;
 	public ScalingWorld scalingWorld;

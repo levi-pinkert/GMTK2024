@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class MainMenuInput : MonoBehaviour
 {
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            GameManager.instance.MainMenuGoNext();
-        }
-    }
+	void Update()
+	{
+		if (Input.GetMouseButtonDown(0))
+		{
+			GameManager.instance.MainMenuGoNext();
+		}
+	}
 }

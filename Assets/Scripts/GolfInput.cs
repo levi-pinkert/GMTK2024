@@ -53,7 +53,7 @@ public class GolfInput : MonoBehaviour
 	}
 
 	public int GetScaleInput()
-    {
+	{
 		while(scaleInputBuffer.Count > 0)
 		{
 			float timestamp = scaleInputBuffer[0].timestamp;
